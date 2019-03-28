@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MidTermExam_SaraMazloumi</string>
+    <string name="textViewCaption">Transport Survey</string>
+    <string name="textViewClientNumber">Client Number: </string>
+    <string name="textViewTypeOfTransport">Type Of Transport</string>
+    <string name="textViewNbKm">Nb Of KM Per Day</string>
+    <string name="textViewAdmin">Admin Password: </string>
+    <string name="editTextClientNumber"></string>
+    <string name="editTextNbKm"></string>
+    <string name="editTextAdminPass"></string>
+
+
+</resources>

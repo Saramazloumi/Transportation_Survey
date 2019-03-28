@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:textColor="#111"
+            android:text="Summary Results" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewTypeOfTransport"
+                    android:layout_width="wrap_content"
+                    android:text="Type Of Transport"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewBusMetro"
+                    android:layout_width="wrap_content"
+                    android:text="Bus / Metro"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewPrivateTaxi"
+                    android:layout_width="wrap_content"
+                    android:text="Private / Taxi"
+                    style="@style/table_head"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewTotal"
+                    android:layout_width="wrap_content"
+                    android:text="Total Client/KM"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewTB"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/table_data"/>
+
+                <TextView
+                    android:id="@+id/textViewTP"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/table_data"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewPercentage"
+                    android:layout_width="wrap_content"
+                    android:text="Percentage Client"
+                    style="@style/table_head"/>
+
+                <TextView
+                    android:id="@+id/textViewPB"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/table_data"/>
+
+                <TextView
+                    android:id="@+id/textViewPP"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    style="@style/table_data"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0b1b6b"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:text="Return" />
+    </LinearLayout>
+
+</LinearLayout>
